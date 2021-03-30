@@ -41,7 +41,11 @@ body {
   width: 100%;
   background: #f8f8f8;
   border-radius: 0px 24px 24px 0px;
-  min-height: 100vh;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
 }
 
 .navigation-content {
@@ -57,6 +61,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  margin-bottom: 30px;
 }
 
 .navigation-link {
@@ -230,7 +235,7 @@ body {
 
 .rates-header {
   padding: 16px;
-  background: #f7f7f7;
+  background: rgba(148, 90, 187, 0.2);
   border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,5 +245,10 @@ body {
           justify-content: space-evenly;
   color: #503e9d;
   font-weight: 600;
+}
+
+.rates-item {
+  padding: 10px 20px;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

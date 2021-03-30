@@ -26,13 +26,17 @@ body {
   width: 100%;
   background: #f8f8f8;
   border-radius: 0px 24px 24px 0px;
-  min-height: 100vh;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
   &-content {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
     width: 100%;
     flex-grow: 1;
+    margin-bottom: 30px;
   }
   &-link {
     display: flex;
@@ -159,11 +163,15 @@ body {
   }
   &-header {
     padding: 16px;
-    background: #f7f7f7;
+    background: rgba(148, 90, 187, 0.2);
     border-radius: 8px;
     display: flex;
     justify-content: space-evenly;
     color: #503e9d;
     font-weight: 600;
+  }
+  &-item {
+    padding: 10px 20px;
+    font-size: 20px;
   }
 }
