@@ -1,131 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/all.min.css" />
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
-  <body>
-    <div id="app">
-      <div class="navigation">
-        <a href="#" class="navigation-logo">
-          <img src="images/logo.png" alt="" />
-        </a>
-        <nav class="navigation-content">
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a href="#" class="navigation-link"
-                ><i class="far fa-home"></i>Домой</a
-              >
-            </li>
-            <li class="navigation-item">
-              <a href="#" class="navigation-link"
-                ><i class="far fa-bookmark"></i>Сохранненые</a
-              >
-            </li>
-            <li class="navigation-item">
-              <a href="#" class="navigation-link"
-                ><i class="far fa-list"></i>Подписки</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <a href="#" class="navigation-link"
-          ><i class="far fa-sign-out"></i>Выход</a
-        >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style/all.min.css" />
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="navigation">
+      <a href="#" class="navigation-logo">
+        <img src="images/logo.png" alt="" />
+      </a>
+      <nav class="navigation-content">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="#" class="navigation-link"><i class="far fa-home"></i>Домой</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link"><i class="far fa-bookmark"></i>Сохранненые</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link"><i class="far fa-list"></i>Подписки</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="navigation-link"><i class="far fa-sign-out"></i>Выход</a>
+    </div>
+
+    <div class="wrapper">
+      <div class="header">
+        <label class="search">
+          <i class="far fa-search search-icon"></i>
+          <input type="text" placeholder="Найти что-нибудь..." class="search-input" />
+        </label>
       </div>
 
-      <div class="wrapper">
-        <div class="header">
-          <label class="search">
-            <i class="far fa-search search-icon"></i>
-            <input
-              type="text"
-              placeholder="Найти что-нибудь..."
-              class="search-input"
-            />
-          </label>
-        </div>
-
-        <div class="preview">
-          <div class="channels">
-            <div class="main-text">
-              <h2 class="main-text-title">Каналы</h2>
-              <!-- <a href="#" class="main-text-link">See all <i class="fal fa-chevron-right"></i></a> -->
-            </div>
-            <div class="channels-content">
-              <a href="#" class="channels-item">
-                <img
-                  src="images/logo-channels.png"
-                  class="channels-pic"
-                  alt=""
-                />
-                <h3 class="channels-title">FOX NEWS</h3>
-              </a>
-              <a href="#" class="channels-item">
-                <img
-                  src="images/logo-channels.png"
-                  class="channels-pic"
-                  alt=""
-                />
-                <h3 class="channels-title">FOX NEWS</h3>
-              </a>
-              <a href="#" class="channels-item">
-                <img
-                  src="images/logo-channels.png"
-                  class="channels-pic"
-                  alt=""
-                />
-                <h3 class="channels-title">FOX NEWS</h3>
-              </a>
-              <a href="#" class="channels-item">
-                <img
-                  src="images/logo-channels.png"
-                  class="channels-pic"
-                  alt=""
-                />
-                <h3 class="channels-title">FOX NEWS</h3>
-              </a>
-              <a href="#" class="channels-all"> Смотреть все </a>
-            </div>
+      <div class="preview">
+        <div class="channels">
+          <div class="main-text">
+            <h2 class="main-text-title">Каналы</h2>
+            <!-- <a href="#" class="main-text-link">See all <i class="fal fa-chevron-right"></i></a> -->
           </div>
-          <div class="rates">
-            <div class="main-text">
-              <h2 class="main-text-title">Курс валют</h2>
-            </div>
-            <div class="rates-content">
-              <div class="rates-header">
-                <div class="rates-day">
-                  <i class="far fa-calendar-day"></i> 31.03.2021
-                </div>
-                <div class="rates-time"><i class="far fa-clock"></i> 00:22</div>
+          <div class="channels-content">
+            <a href="#" class="channels-item">
+              <img src="images/logo-channels.png" class="channels-pic" alt="" />
+              <h3 class="channels-title">FOX NEWS</h3>
+            </a>
+            <a href="#" class="channels-item">
+              <img src="images/logo-channels.png" class="channels-pic" alt="" />
+              <h3 class="channels-title">FOX NEWS</h3>
+            </a>
+            <a href="#" class="channels-item">
+              <img src="images/logo-channels.png" class="channels-pic" alt="" />
+              <h3 class="channels-title">FOX NEWS</h3>
+            </a>
+            <a href="#" class="channels-item">
+              <img src="images/logo-channels.png" class="channels-pic" alt="" />
+              <h3 class="channels-title">FOX NEWS</h3>
+            </a>
+            <a href="#" class="channels-all"> Смотреть все </a>
+          </div>
+        </div>
+        <div class="rates">
+          <div class="main-text">
+            <h2 class="main-text-title">Курс валют</h2>
+          </div>
+          <div class="rates-content">
+            <div class="rates-header">
+              <div class="rates-day">
+                <i class="far fa-calendar-day"></i> 31.03.2021
               </div>
-              <div class="rates-list">
-                <div class="rates-item">
-                  RUB
+              <div class="rates-time"><i class="far fa-clock"></i> 00:22</div>
+            </div>
+            <div class="rates-list">
+              <div class="rates-item">
+                <div class="rates-currency-name">
+                  Валюта
                 </div>
-                <div class="rates-item">
+                <div class="rates-price">
+                  Стоимость
+                </div>
+                <div class="rates-schedule">
+                  График
+                </div>
+                <div class="rates-status">
+                  Изменения
+                </div>
+              </div>
+              <div class="rates-item">
+                <div class="rates-currency-name">
+                  rub
+                </div>
+                <div class="rates-price">
+                  138,00
+                </div>
+                <div class="rates-schedule">
+                  <i class="fal fa-chart-line"></i>
+                </div>
+                <div class="rates-status">
+                  40
+                </div>
+              </div>
+              <div class="rates-item">
+                <div class="rates-currency-name">
                   EUR
                 </div>
-                <div class="rates-item">
+                <div class="rates-price">
+                  12 296,58
+                </div>
+                <div class="rates-schedule">
+                  <i class="fal fa-chart-line-down"></i>
+                </div>
+                <div class="rates-status">
+                  51,23
+                </div>
+              </div>
+              <div class="rates-item">
+                <div class="rates-currency-name">
                   USD
                 </div>
-                <div class="rates-item">
-                  CNY
+                <div class="rates-price">
+                  10 474,98
+                </div>
+                <div class="rates-schedule">
+                  <i class="fal fa-chart-line-down"></i>
+                </div>
+                <div class="rates-status">
+                  11,48
+                </div>
+              </div>
+              <div class="rates-item">
+                <div class="rates-currency-name">
+                  USD
+                </div>
+                <div class="rates-price">
+                  2050,00
+                </div>
+                <div class="rates-schedule">
+                  <i class="fal fa-horizontal-rule"></i>
+                </div>
+                <div class="rates-status">
+                  0
                 </div>
               </div>
             </div>
           </div>
+          <a href="#" class="rates-all">Смотреть все</a>
+        </div>
+      </div>
+
+      <div class="interest">
+        <div class="main-text">
+          <h2 class="main-text-title">Интересное сегодня</h2>
+          <a href="#" class="main-text-link">Смотреть все<i class="fal fa-chevron-right"></i></a>
+        </div>
+
+        <div class="interest-content">
+          <section class="interest-item">
+            <img src="images/int-item.png" alt="" class="interest-pic">
+            <div class="interest-item-content">
+              <h2 class="interest-item-title">
+                Hate speech vs free speech
+              </h2>
+              <div class="interest-item-like">
+                <a href="#" class="interest-item-like-view">
+                  <i class="fal fa-thumbs-up"></i>
+                  10.8K
+                </a>
+                <a href="#" class="interest-item-like-view">
+                  <i class="fal fa-thumbs-down"></i>
+                  1.4K
+                </a>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

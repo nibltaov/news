@@ -3,20 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
 }
+
 ul {
   list-style: none;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   background: #e5e5e5;
 }
+
 #app {
   background: rgba(255, 255, 255, 0.5);
   display: flex;
 }
+
 .navigation {
   padding: 33px 16px 16px;
   display: flex;
@@ -30,6 +35,7 @@ body {
   position: sticky;
   top: 0;
   overflow-y: auto;
+
   &-content {
     display: flex;
     flex-direction: column;
@@ -38,6 +44,7 @@ body {
     flex-grow: 1;
     margin-bottom: 30px;
   }
+
   &-link {
     display: flex;
     gap: 24px;
@@ -50,30 +57,36 @@ body {
     transition: background 200ms, color 200ms;
     border-radius: 12px;
     width: 100%;
+
     &:hover {
       color: #503e9d;
       background: rgba(80, 62, 157, 0.3);
     }
+
     i {
       font-size: 24px;
       width: 24px;
     }
   }
 }
+
 .wrapper {
   width: 100%;
   padding: 32px;
 }
+
 .search {
   display: flex;
   align-items: center;
   cursor: text;
   position: relative;
+
   &-icon {
     font-size: 20px;
     position: absolute;
     left: 16px;
   }
+
   &-input {
     background: white;
     border: none;
@@ -86,31 +99,37 @@ body {
     color: #626264;
   }
 }
+
 .preview {
   margin-top: 27px;
   display: grid;
   grid-template-columns: 40% 1fr;
   gap: 30px;
 }
+
 .main-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   &-title {
     font-size: 24px;
     line-height: 32px;
     color: #182135;
   }
+
   &-link {
     color: #503e9d;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+
     i {
       margin-left: 5px;
     }
   }
 }
+
 .channels {
   &-content {
     margin-top: 32px;
@@ -118,19 +137,22 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+
   &-item {
     background: #f7f7f7;
-    padding: 32px 10px 16px;
+    padding: 17px 10px 17px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
     box-shadow: 0px 6px 30px rgba(65, 84, 152, 0.08);
     transition: background 200ms;
+
     &:hover {
       background: white;
     }
   }
+
   &-title {
     font-weight: bold;
     font-size: 16px;
@@ -138,6 +160,7 @@ body {
     color: #182135;
     margin-top: 27px;
   }
+
   &-all {
     grid-column: span 2;
     background: #f7f7f7;
@@ -148,11 +171,13 @@ body {
     color: #503e9d;
     background: #f7f7f7;
     transition: background 200ms;
+
     &:hover {
       background: white;
     }
   }
 }
+
 .rates {
   &-content {
     margin-top: 27px;
@@ -160,18 +185,86 @@ body {
     box-shadow: 0px 6px 30px rgba(65, 84, 152, 0.08);
     border-radius: 8px;
     padding-bottom: 10px;
+    overflow: hidden;
   }
+
   &-header {
     padding: 16px;
-    background: rgba(148, 90, 187, 0.2);
-    border-radius: 8px;
+    background: #323232;
+    color: white;
     display: flex;
     justify-content: space-evenly;
-    color: #503e9d;
     font-weight: 600;
   }
+
   &-item {
     padding: 10px 20px;
     font-size: 20px;
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    color: #323232;
+    border-top: 1px solid #e9e9e9;
+    cursor: default;
+    user-select: none;
+    transition: background 200ms;
+
+    &:hover {
+      background: #3232320e;
+    }
+
+    &:first-of-type {
+      border-top: none;
+      background: #323232;
+      color: white;
+      box-shadow: 0px 6px 30px rgba(65, 84, 152, 0.08);
+
+      &:hover {
+        background: #323232;
+      }
+    }
+
+    &>* {
+      flex-basis: 50%;
+    }
+  }
+
+  $parent: &;
+
+  &-schedule {
+    i {
+      font-size: 22px;
+
+      &.fa-chart-line {
+        color: #008000;
+      }
+
+      &.fa-chart-line-down {
+        color: #ff0000;
+      }
+
+      &.fa-horizontal-rule {
+        color: #323232;
+      }
+    }
+  }
+
+  &-all {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 6px 30px rgba(65, 84, 152, 0.08);
+    border-radius: 8px;
+    color: #503e9d;
+    background: #f7f7f7;
+  }
+}
+.interest {
+  margin-top: 48px;
+  &-content {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat( );
   }
 }

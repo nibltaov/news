@@ -176,7 +176,7 @@ body {
 
 .channels-item {
   background: #f7f7f7;
-  padding: 32px 10px 16px;
+  padding: 17px 10px 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,24 +231,99 @@ body {
           box-shadow: 0px 6px 30px rgba(65, 84, 152, 0.08);
   border-radius: 8px;
   padding-bottom: 10px;
+  overflow: hidden;
 }
 
 .rates-header {
   padding: 16px;
-  background: rgba(148, 90, 187, 0.2);
-  border-radius: 8px;
+  background: #323232;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  color: #503e9d;
   font-weight: 600;
 }
 
 .rates-item {
   padding: 10px 20px;
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+  color: #323232;
+  border-top: 1px solid #e9e9e9;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: background 200ms;
+  transition: background 200ms;
+}
+
+.rates-item:hover {
+  background: #3232320e;
+}
+
+.rates-item:first-of-type {
+  border-top: none;
+  background: #323232;
+  color: white;
+  -webkit-box-shadow: 0px 6px 30px rgba(65, 84, 152, 0.08);
+          box-shadow: 0px 6px 30px rgba(65, 84, 152, 0.08);
+}
+
+.rates-item:first-of-type:hover {
+  background: #323232;
+}
+
+.rates-item > * {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.rates-schedule i {
+  font-size: 22px;
+}
+
+.rates-schedule i.fa-chart-line {
+  color: #008000;
+}
+
+.rates-schedule i.fa-chart-line-down {
+  color: #ff0000;
+}
+
+.rates-schedule i.fa-horizontal-rule {
+  color: #323232;
+}
+
+.rates-all {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  -webkit-box-shadow: 0px 6px 30px rgba(65, 84, 152, 0.08);
+          box-shadow: 0px 6px 30px rgba(65, 84, 152, 0.08);
+  border-radius: 8px;
+  color: #503e9d;
+  background: #f7f7f7;
+}
+
+.interest {
+  margin-top: 48px;
+}
+
+.interest-content {
+  margin-top: 32px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat();
+      grid-template-columns: repeat();
 }
 /*# sourceMappingURL=style.css.map */
